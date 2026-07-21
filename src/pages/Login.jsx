@@ -71,7 +71,7 @@ export default function Login() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center gap-12 px-6 py-12 lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:px-20">
+      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center gap-[clamp(1.5rem,4vh,3rem)] px-6 py-[clamp(1.5rem,4vh,3rem)] lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:px-[clamp(1.5rem,5vw,5rem)]">
         {/* Brand / hero copy, floats directly on the photo */}
         <div className="max-w-xl text-center text-white lg:text-left">
           <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-amber-500 shadow-lg shadow-amber-500/40 ring-4 ring-amber-400/20 lg:mx-0">
@@ -101,15 +101,15 @@ export default function Login() {
         </div>
 
         {/* Floating glass card */}
-        <div className="w-full max-w-md">
-          <div className="relative overflow-hidden rounded-3xl border border-white/20 bg-white/95 p-8 shadow-2xl shadow-black/50 backdrop-blur-xl dark:bg-gray-900/90 sm:p-10">
+        <div className="w-full max-w-[clamp(320px,32vw,448px)] max-h-[92vh] overflow-y-auto">
+          <div className="relative overflow-hidden rounded-3xl border border-white/20 bg-white/95 p-[clamp(1.25rem,3vw,2.5rem)] shadow-2xl shadow-black/50 backdrop-blur-xl dark:bg-gray-900/90">
             <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500" />
 
-            <div className="mb-8 flex flex-col items-center">
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-amber-500 shadow-lg shadow-amber-500/30 ring-4 ring-amber-500/10">
+            <div className="mb-[clamp(1rem,3vh,2rem)] flex flex-col items-center">
+              <div className="mb-4 flex h-[clamp(2.75rem,5vw,3.5rem)] w-[clamp(2.75rem,5vw,3.5rem)] items-center justify-center rounded-full bg-amber-500 shadow-lg shadow-amber-500/30 ring-4 ring-amber-500/10">
                 <CarTaxiFront size={26} className="text-gray-900" />
               </div>
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Admin Login</h2>
+              <h2 className="text-[clamp(1.25rem,2vw,1.5rem)] font-bold text-gray-900 dark:text-gray-100">Admin Login</h2>
               <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
                 Welcome back! Please login to continue.
               </p>
